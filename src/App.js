@@ -2,8 +2,8 @@ import './App.css';
 import { Header } from './components/Header';
 import { Balance } from './components/Balance';
 import { IncomeExpenses } from './components/IncomeExpenses';
-import { TransList } from './components/TransList';
-import { AddTrans } from './components/AddTrans';
+import { TransactionList } from './components/TransactionList';
+import { AddTransaction } from './components/AddTransaction';
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
         <div className="container">
           <Balance />
           <IncomeExpenses />
-          <TransList />
-          <AddTrans />
+          <TransactionList />
+          <AddTransaction />
         </div>
     </div>
   );
