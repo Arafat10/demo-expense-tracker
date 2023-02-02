@@ -1,4 +1,5 @@
 import React,{createContext, userReducer} from "react";
+import AppReducer from './AppReducer';
 
 const initialState = {
     transactions: [
@@ -9,8 +10,9 @@ const initialState = {
         ]  
 }
 
-export const GlobalContex = createContext(initialState);
+export const GlobalContext = createContext(initialState);
 
+/*global useReducer */
 export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
